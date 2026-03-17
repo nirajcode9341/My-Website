@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* MAIN BOX */
+.box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    margin: 80px auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* HEADING */
+.box h2 {
+    margin-bottom: 20px;
+}
+
+/* INPUT */
+input[type="file"] {
+    margin-top: 10px;
+}
+
+/* BUTTON */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(135deg, orange, #f59e0b);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* HOVER */
+button:hover {
+    background: #ea580c;
+    transform: scale(1.05);
+}
+
+#preview {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#preview img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid orange;
+}
+
+/* MAIN BOX BIGGER */
+.box {
+    background: rgb(255, 255, 255);
+    padding: 40px;              /* 👈 more space */
+    border-radius: 20px;
+    width: 1000px;               /* 👈 pehle 350px tha */
+    margin: 80px auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+/* PREVIEW CONTAINER */
+#preview {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* BIGGER IMAGES */
+#preview img {
+    width: 120px;              /* 👈 pehle 80px tha */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid orange;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+#preview img:hover {
+    transform: scale(1.1);
+}
+
+/* DRAG AREA */
+#drop-area {
+    border: 2px dashed orange;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+#drop-area:hover {
+    background: #fff7ed;
+}
+
+/* HIDE INPUT */
+#drop-area input {
+    display: none;
+}
+
+/* REMOVE BUTTON */
+.preview-item {
+    position: relative;
+}
+
+.remove-btn {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 3px 6px;
+    cursor: pointer;
+}
